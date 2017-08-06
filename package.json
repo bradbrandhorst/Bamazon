@@ -1,0 +1,23 @@
+{
+  "name": "bamazon",
+  "version": "1.0.0",
+  "description": "SQL and JavaScript app for an amazon clone.",
+  "main": "bamazonCustomer.js",
+  "scripts": {
+    "test": "n"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bradbrandhorst/Bamazon.git"
+  },
+  "author": "Brad Brandhorst",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bradbrandhorst/Bamazon/issues"
+  },
+  "homepage": "https://github.com/bradbrandhorst/Bamazon#readme",
+  "dependencies": {
+    "inquirer": "^3.2.1",
+    "mysql": "^2.14.1"
+  }
+}
