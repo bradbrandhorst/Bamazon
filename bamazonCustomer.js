@@ -17,8 +17,7 @@ connection.connect(function(err) {
 //query the products table, display ids, products, prices, departments, etc.
 connection.query("SELECT * FROM products", function(err, res) {
 
-    console.log('█║▌│ █│║▌ ║││█║▌ │║║█║ │║║█║ Welcome to BAMazon! █║▌│ █│║▌ ║││█║▌ │║║█║ │║║█║'
-        )
+    console.log('█║▌│ █│║▌ ║││█║▌ │║║█║ │║║█║ Welcome to BAMazon! █║▌│ █│║▌ ║││█║▌ │║║█║ │║║█║')
     console.log("");
     console.log("All Available Products:");
     console.log("");
@@ -72,7 +71,6 @@ var start = function() {
 
             if (res[0].stock_quantity >= answer.quantity) {
 
-                //var dept = res[0].department_name;
                 var adjustedQuantity = res[0].stock_quantity - answer.quantity;
                 var purchasePrice = (answer.quantity * res[0].price).toFixed(2);
 //query the databse to update the stock to the new qty
